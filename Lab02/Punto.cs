@@ -8,7 +8,13 @@ namespace Lab02
 {
     internal class Punto
     {
-        public int x { get; set; }
-        public int y { get; set; }
+        public double x { get; set; }
+        public double y { get; set; }
+
+        public Punto(double x, double y) 
+        {
+            this.x = x;
+            this.y = y;
+        }
     }
 }

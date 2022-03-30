@@ -25,15 +25,15 @@ namespace Lab02
         public Punto punto4 { get; set; }
 
 
-        public double Base(double x2, double x1, double y1, double y2)
+        public double Base(Punto punto1, Punto punto2)
         {
-            double bs = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+            double bs = Math.Sqrt(Math.Pow((punto2.x - punto1.x), 2) + Math.Pow((punto2.y - punto1.y), 2));
             return bs;
         }
 
-        public double Altura(double x3, double y3, double y4, double x4)
+        public double Altura(Punto punto2, Punto punto3)
         {
-            double h = Math.Sqrt(Math.Pow((x3 - x4), 2) + Math.Pow((y3 - y4), 2));
+            double h = Math.Sqrt(Math.Pow((punto2.x - punto3.x), 2) + Math.Pow((punto3.y - punto2.y), 2));
             return h;
         }
 
