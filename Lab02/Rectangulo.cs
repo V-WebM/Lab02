@@ -31,10 +31,22 @@ namespace Lab02
             return bs;
         }
 
+        public double Base2(Punto punto3,Punto punto4)
+        {
+            double bs2= Math.Sqrt(Math.Pow((punto3.x -punto4.x), 2) + Math.Pow((punto3.y-punto4.y), 2));
+            return bs2;
+        }
+
         public double Altura(Punto punto2, Punto punto3)
         {
             double h = Math.Sqrt(Math.Pow((punto2.x - punto3.x), 2) + Math.Pow((punto3.y - punto2.y), 2));
             return h;
+        }
+
+        public double Altura2(Punto punto1, Punto punto4)
+        {
+            double h2 = Math.Sqrt(Math.Pow((punto1.x - punto4.x), 2) + Math.Pow((punto4.y- punto1.y), 2));
+            return h2;
         }
 
         public double Perimetro(double bs, double h)

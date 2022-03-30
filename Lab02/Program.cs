@@ -41,17 +41,36 @@ namespace Lab02
                 double bs;
                 bs = rectangulo.Base(rectangulo.punto1,rectangulo.punto2);
 
+                double bs2;
+                bs2= rectangulo.Base2(rectangulo.punto3, rectangulo.punto4);
+
                 double h;
                 h= rectangulo.Altura(rectangulo.punto2,rectangulo.punto3);
 
+                double h2;
+                h2 = rectangulo.Altura2(rectangulo.punto1, rectangulo.punto4);
+
                 double area;
-                area = rectangulo.Area(bs, h);
-
                 double perimetro;
-                perimetro = rectangulo.Perimetro(bs, h);
 
-                Console.WriteLine("El area es :" + area);
-                Console.WriteLine("El perimetro es:" + perimetro);
+                if (bs==bs2)
+                {
+                    if (h == h2)
+                    {
+                        area = rectangulo.Area(bs, h);
+                        perimetro = rectangulo.Perimetro(bs, h);
+
+                        Console.WriteLine("El area es :" + area);
+                        Console.WriteLine("El perimetro es:" + perimetro);
+                    }
+                    else {
+                        Console.WriteLine("La figura registrada no es un rectangulo");
+                    }
+                }
+                else 
+                {
+                    Console.WriteLine("La figura registrada no es un rectangulo");
+                }
 
                 Console.Read();
             }
