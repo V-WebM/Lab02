@@ -43,7 +43,7 @@ namespace Lab02
                 double perimetro;
                 perimetro = rectangulo.Perimetro(bs, h);
 
-                Console.WriteLine("El area del rectangulo es :" + area);
+                Console.WriteLine("El area es :" + area);
                 Console.WriteLine("El perimetro es:" + perimetro);
 
                 Console.Read();
