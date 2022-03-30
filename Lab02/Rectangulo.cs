@@ -17,6 +17,13 @@ namespace Lab02
         public double x4 { get; set; }
         public double y4 { get; set; }
 
+        //Con Punto
+
+        public Punto punto1 { get; set; }
+        public Punto punto2 { get; set; }
+        public Punto punto3 { get; set; }
+        public Punto punto4 { get; set; }
+
 
         public double Base(double x2, double x1, double y1, double y2)
         {
